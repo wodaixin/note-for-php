@@ -1,0 +1,522 @@
+
+<!DOCTYPE HTML>
+<html lang="zh-hans" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>自定义函数及内部函数 · GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        <meta name="author" content="Mr.B">
+        
+        
+    
+    <link rel="stylesheet" href="../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="正则表达式.html" />
+    
+    
+    <link rel="prev" href="流程控制.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="输入并搜索" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+    
+        
+        <li>
+            <a href="https://wodaixin.github.io" target="_blank" class="custom-link">Home</a>
+        </li>
+    
+    
+
+    
+    <li class="divider"></li>
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    Note for PHP
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    PHP 基础
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.1" data-path="引用变量.html">
+            
+                <a href="引用变量.html">
+            
+                    
+                    引用变量
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2" data-path="常量及数据类型.html">
+            
+                <a href="常量及数据类型.html">
+            
+                    
+                    常量及数据类型
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3" data-path="运算符.html">
+            
+                <a href="运算符.html">
+            
+                    
+                    运算符
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.4" data-path="流程控制.html">
+            
+                <a href="流程控制.html">
+            
+                    
+                    流程控制
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.2.5" data-path="自定义函数及内部函数.html">
+            
+                <a href="自定义函数及内部函数.html">
+            
+                    
+                    自定义函数及内部函数
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.6" data-path="正则表达式.html">
+            
+                <a href="正则表达式.html">
+            
+                    
+                    正则表达式
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.7" data-path="文件及目录.html">
+            
+                <a href="文件及目录.html">
+            
+                    
+                    文件及目录
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.8" data-path="面向对象.html">
+            
+                <a href="面向对象.html">
+            
+                    
+                    面向对象
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.9" data-path="网络协议.html">
+            
+                <a href="网络协议.html">
+            
+                    
+                    网络协议
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.10" data-path="会话控制技术.html">
+            
+                <a href="会话控制技术.html">
+            
+                    
+                    会话控制
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.11" data-path="开发环境及配置.html">
+            
+                <a href="开发环境及配置.html">
+            
+                    
+                    开发环境及配置
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="../mysql/">
+            
+                <a href="../mysql/">
+            
+                    
+                    MySQL 基础
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1" data-path="../mysql/MySQL基础.html">
+            
+                <a href="../mysql/MySQL基础.html">
+            
+                    
+                    MySQL 基础
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2" data-path="../mysql/MySQL创建高性能索引.html">
+            
+                <a href="../mysql/MySQL创建高性能索引.html">
+            
+                    
+                    MySQL 创建高性能索引
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3" data-path="../mysql/MySQL的SQL语句编写.html">
+            
+                <a href="../mysql/MySQL的SQL语句编写.html">
+            
+                    
+                    MySQL 的SQL语句编写
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.4" data-path="../mysql/MySQL的查询优化.html">
+            
+                <a href="../mysql/MySQL的查询优化.html">
+            
+                    
+                    MySQL 的查询优化
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            本书使用 GitBook 发布
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >自定义函数及内部函数</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h3 id="&#x81EA;&#x5B9A;&#x4E49;&#x51FD;&#x6570;&#x53CA;&#x5185;&#x90E8;&#x51FD;&#x6570;">&#x81EA;&#x5B9A;&#x4E49;&#x51FD;&#x6570;&#x53CA;&#x5185;&#x90E8;&#x51FD;&#x6570;</h3>
+<h4 id="&#x53D8;&#x91CF;&#x7684;&#x4F5C;&#x7528;&#x57DF;&#x548C;&#x9759;&#x6001;&#x53D8;&#x91CF;">&#x53D8;&#x91CF;&#x7684;&#x4F5C;&#x7528;&#x57DF;&#x548C;&#x9759;&#x6001;&#x53D8;&#x91CF;</h4>
+<p>&#x53D8;&#x91CF;&#x7684;&#x4F5C;&#x7528;&#x57DF;&#x4E5F;&#x79F0;&#x53D8;&#x91CF;&#x7684;&#x8303;&#x56F4;&#xFF08;&#x5916;&#x90E8;&#x53D8;&#x91CF;&#x62FF;&#x5230;&#x5C40;&#x90E8;&#x4E2D;&#x4F7F;&#x7528; &#x5173;&#x952E;&#x5B57; <code>global</code> &#x6216;&#x8005; <code>$GLOBAL[&apos;&apos;]</code></p>
+<p>&#x9759;&#x6001;&#x53D8;&#x91CF; &#x4EC5;&#x5728;&#x5C40;&#x90E8;&#x51FD;&#x6570;&#x57DF;&#x4E2D;&#x5B58;&#x5728;&#xFF0C;&#x4F46;&#x5F53;&#x7A0B;&#x5E8F;&#x6267;&#x884C;&#x79BB;&#x5F00;&#x6B64;&#x4F5C;&#x7528;&#x57DF;&#x65F6;&#xFF0C;&#x5176;&#x503C;&#x5E76;&#x4E0D;&#x4F1A;&#x6D88;&#x5931;&#x3002; </p>
+<p><code>static</code> &#x5173;&#x952E;&#x5B57;</p>
+<ol>
+<li>&#x4EC5;&#x521D;&#x59CB;&#x5316;&#x4E00;&#x6B21;</li>
+<li>&#x521D;&#x59CB;&#x5316;&#x65F6;&#x9700;&#x8981;&#x8D4B;&#x503C;</li>
+<li>&#x6BCF;&#x6B21;&#x6267;&#x884C;&#x51FD;&#x6570;&#x8BE5;&#x503C;&#x4F1A;&#x4FDD;&#x7559;</li>
+<li><code>static</code> &#x4FEE;&#x9970;&#x7684;&#x53D8;&#x91CF;&#x662F;&#x5C40;&#x90E8;&#x7684;&#xFF0C;&#x4EC5;&#x5728;&#x51FD;&#x6570;&#x5185;&#x90E8;&#x6709;&#x6548;</li>
+<li>&#x53EF;&#x4EE5;&#x8BB0;&#x5F55;&#x51FD;&#x6570;&#x7684;&#x8C03;&#x7528;&#x6B21;&#x6570;&#xFF0C;&#x4ECE;&#x800C;&#x53EF;&#x4EE5;&#x5728;&#x67D0;&#x4E9B;&#x6761;&#x4EF6;&#x4E0B;&#x7EC8;&#x6B62;&#x9012;&#x5F52;</li>
+</ol>
+<h4 id="&#x51FD;&#x6570;&#x7684;&#x53C2;&#x6570;&#x53CA;&#x53C2;&#x6570;&#x7684;&#x5F15;&#x7528;&#x4F20;&#x9012;&#xFF1A;">&#x51FD;&#x6570;&#x7684;&#x53C2;&#x6570;&#x53CA;&#x53C2;&#x6570;&#x7684;&#x5F15;&#x7528;&#x4F20;&#x9012;&#xFF1A;</h4>
+<p>&#x9ED8;&#x8BA4;&#x60C5;&#x51B5;&#x4E0B;&#xFF0C;&#x51FD;&#x6570;&#x901A;&#x8FC7;&#x503C;&#x4F20;&#x9012;&#x3002;</p>
+<p>&#x5982;&#x679C;&#x5E0C;&#x671B;&#x5141;&#x8BB8;&#x51FD;&#x6570;&#x4FEE;&#x6539;&#x5B83;&#x7684;&#x503C;&#xFF0C;&#x5FC5;&#x987B;&#x901A;&#x8FC7;&#x5F15;&#x7528;&#x4F20;&#x9012;&#x53C2;&#x6570; <code>&amp;</code></p>
+<h4 id="&#x51FD;&#x6570;&#x7684;&#x8FD4;&#x56DE;&#x503C;&#x53CA;&#x5F15;&#x7528;&#x8FD4;&#x56DE;&#xFF1A;">&#x51FD;&#x6570;&#x7684;&#x8FD4;&#x56DE;&#x503C;&#x53CA;&#x5F15;&#x7528;&#x8FD4;&#x56DE;&#xFF1A;</h4>
+<p>&#x503C;&#x901A;&#x8FC7;&#x4F7F;&#x7528;&#x53EF;&#x9009;&#x7684;&#x8FD4;&#x56DE;&#x8BED;&#x53E5; <code>return</code> &#x8FD4;&#x56DE;</p>
+<p>&#x53EF;&#x4EE5;&#x8FD4;&#x56DE;&#x5305;&#x62EC;&#x6570;&#x7EC4;&#x548C;&#x5BF9;&#x8C61;&#x7684;&#x4EFB;&#x610F;&#x7C7B;&#x578B;</p>
+<p>&#x8FD4;&#x56DE;&#x8BED;&#x53E5;&#x4F1A;&#x7EC8;&#x6B62;&#x51FD;&#x6570;&#x6267;&#x884C;&#xFF0C;&#x5C06;&#x63A7;&#x5236;&#x6743;&#x4EA4;&#x56DE;&#x51FD;&#x6570;&#x8C03;&#x7528;&#x5904;</p>
+<p>&#x7701;&#x7565; <code>return</code> &#xFF0C;&#x8FD4;&#x56DE; <code>NULL</code> &#xFF0C;&#x4E0D;&#x53EF;&#x80FD;&#x6709;&#x591A;&#x4E2A;&#x8FD4;&#x56DE;&#x503C;</p>
+<p>&#x4ECE;&#x51FD;&#x6570;&#x8FD4;&#x56DE;&#x4E00;&#x4E2A;&#x5F15;&#x7528;&#xFF0C;&#x5FC5;&#x987B;&#x5728;&#x51FD;&#x6570;&#x58F0;&#x660E;&#x548C;&#x6307;&#x6D3E;&#x8FD4;&#x56DE;&#x503C;&#x7ED9;&#x4E00;&#x4E2A;&#x53D8;&#x91CF;&#x65F6;&#x4F7F;&#x7528;&#x5F15;&#x7528;&#x8FD0;&#x7B97;&#x7B26; <code>&amp;</code></p>
+<h4 id="&#x5916;&#x90E8;&#x6587;&#x4EF6;&#x7684;&#x989D;&#x5BFC;&#x5165;&#xFF1A;">&#x5916;&#x90E8;&#x6587;&#x4EF6;&#x7684;&#x989D;&#x5BFC;&#x5165;&#xFF1A;</h4>
+<p><code>include &#x3001;</code>require` &#x8BED;&#x53E5;&#x5305;&#x542B;&#x5E76;&#x8FD0;&#x884C;&#x6307;&#x5B9A;&#x6587;&#x4EF6;</p>
+<p>&#x5982;&#x679C;&#x7ED9;&#x51FA;&#x8DEF;&#x52B2;&#x540D;&#x6309;&#x7167;&#x8DEF;&#x5F84;&#x6765;&#x627E;&#xFF0C;&#x5426;&#x5219;&#x4ECE; <code>include_path</code> &#x4E2D;&#x67E5;&#x627E;</p>
+<p>&#x5982;&#x679C; <code>include_path</code> &#x4E2D;&#x4E5F;&#x6CA1;&#x6709;&#xFF0C;&#x5219;&#x4ECE;&#x8C03;&#x7528;&#x811A;&#x672C;&#x6587;&#x4EF6;&#x6240;&#x5728;&#x7684;&#x76EE;&#x5F55;&#x548C;&#x5F53;&#x524D;&#x5DE5;&#x4F5C;&#x76EE;&#x5F55;&#x4E0B;&#x5BFB;&#x627E;</p>
+<p>&#x5F53;&#x4E00;&#x4E2A;&#x6587;&#x4EF6;&#x88AB;&#x5305;&#x542B;&#x65F6;&#xFF0C;&#x5176;&#x4E2D;&#x6240;&#x5305;&#x542B;&#x7684;&#x4EE3;&#x7801;&#x7EE7;&#x627F;&#x4E86; include &#x6240;&#x5728;&#x884C;&#x5F97;&#x5230;&#x53D8;&#x91CF;&#x8303;&#x56F4;</p>
+<p>&#x52A0;&#x8F7D;&#x8FC7;&#x7A0B;&#x4E2D;&#x672A;&#x627E;&#x5230;&#x6587;&#x4EF6;&#x5219; <code>include</code> &#x6784;&#x9020;&#x4F1A;&#x53D1;&#x51FA;&#x4E00;&#x6761;&#x8B66;&#x544A;&#xFF1B;<code>require</code> &#x4E0D;&#x540C;&#xFF0C;&#x540E;&#x8005;&#x4F1A;&#x53D1;&#x51FA;&#x4E00;&#x4E2A;&#x81F4;&#x547D;&#x9519;&#x8BEF;</p>
+<p><code>require</code> &#x5728;&#x51FA;&#x9519;&#x65F6;&#x4EA7;&#x751F; <code>E_COMPLINE_ERROR</code> &#x7EA7;&#x522B;&#x7684;&#x9519;&#x8BEF;&#xFF0C;&#x5C06;&#x5BFC;&#x81F4;&#x811A;&#x672C;&#x7EC8;&#x6B62;&#xFF0C;&#x800C; <code>include</code> &#x53EA;&#x4EA7;&#x751F;&#x8B66;&#x544A; <code>E_WARNING</code> &#xFF0C;&#x811A;&#x672C;&#x7EE7;&#x7EED;&#x8FD0;&#x884C;</p>
+<h4 id="&#x7CFB;&#x7EDF;&#x5185;&#x7F6E;&#x7684;&#x51FD;&#x6570;&#xFF1A;">&#x7CFB;&#x7EDF;&#x5185;&#x7F6E;&#x7684;&#x51FD;&#x6570;&#xFF1A;</h4>
+<p>&#x65F6;&#x95F4;&#x65E5;&#x671F;&#x51FD;&#x6570;</p>
+<pre><code class="lang-php">date()  strtotime()  mktime()  time()  microtime() date_default_timezone_set()
+</code></pre>
+<p>IP&#x5904;&#x7406;&#x51FD;&#x6570;</p>
+<pre><code class="lang-php">ip2long() long2ip()
+</code></pre>
+<p>&#x6253;&#x5370;&#x5904;&#x7406;</p>
+<pre><code class="lang-php"><span class="hljs-keyword">print</span>() pringf() print_r() <span class="hljs-keyword">echo</span> sprintf() var_dump() var_export()
+</code></pre>
+<p>&#x5E8F;&#x5217;&#x5316;&#x53CA;&#x53CD;&#x5E8F;&#x5217;&#x5316;&#x51FD;&#x6570;</p>
+<pre><code class="lang-php">serialize() unserialize()
+</code></pre>
+<p>&#x5B57;&#x7B26;&#x4E32;&#x5904;&#x7406;&#x51FD;&#x6570;</p>
+<pre><code class="lang-php">implode() explode() join() strrev() trim() ltrim() rtrim() strstr() number_format()
+</code></pre>
+<p>&#x6570;&#x7EC4;&#x5904;&#x7406;&#x51FD;&#x6570;</p>
+<pre><code class="lang-php">array_key() array_values() array_diff() array_intersect() array_merge() array_shift() array_unshift() array_pop() array_push() sort()
+</code></pre>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="流程控制.html" class="navigation navigation-prev " aria-label="Previous page: 流程控制">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="正则表达式.html" class="navigation navigation-next " aria-label="Next page: 正则表达式">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"自定义函数及内部函数","level":"1.2.5","depth":2,"next":{"title":"正则表达式","level":"1.2.6","depth":2,"path":"language-basic/正则表达式.md","ref":"language-basic/正则表达式.md","articles":[]},"previous":{"title":"流程控制","level":"1.2.4","depth":2,"path":"language-basic/流程控制.md","ref":"language-basic/流程控制.md","articles":[]},"dir":"ltr"},"config":{"plugins":["highlight","livereload","livereload"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"highlight":{},"livereload":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","author":"Mr.B","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"GitBook","language":"zh-hans","links":{"sidebar":{"Home":"https://wodaixin.github.io"}},"gitbook":"3.2.3","description":"这是一个读书笔记"},"file":{"path":"language-basic/自定义函数及内部函数.md","mtime":"2020-07-11T06:44:15.907Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2020-07-13T13:16:09.657Z"},"basePath":"..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../gitbook/gitbook.js"></script>
+    <script src="../gitbook/theme.js"></script>
+    
+        
+        <script src="../gitbook/gitbook-plugin-livereload/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+
