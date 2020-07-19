@@ -1,0 +1,682 @@
+
+<!DOCTYPE HTML>
+<html lang="zh-hans" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>高并发和大流量解决方案 · GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        <meta name="author" content="Mr.B">
+        
+        
+    
+    <link rel="stylesheet" href="../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="Web资源防盗链.md" />
+    
+    
+    <link rel="prev" href="../high-concurrenc/README.md" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="输入并搜索" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+    
+        
+        <li>
+            <a href="https://wodaixin.github.io" target="_blank" class="custom-link">Home</a>
+        </li>
+    
+    
+
+    
+    <li class="divider"></li>
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    Note for PHP
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="../language-basic/">
+            
+                <a href="../language-basic/">
+            
+                    
+                    PHP 基础
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.1" data-path="../language-basic/引用变量.html">
+            
+                <a href="../language-basic/引用变量.html">
+            
+                    
+                    引用变量
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2" data-path="../language-basic/常量及数据类型.html">
+            
+                <a href="../language-basic/常量及数据类型.html">
+            
+                    
+                    常量及数据类型
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3" data-path="../language-basic/运算符.html">
+            
+                <a href="../language-basic/运算符.html">
+            
+                    
+                    运算符
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.4" data-path="../language-basic/流程控制.html">
+            
+                <a href="../language-basic/流程控制.html">
+            
+                    
+                    流程控制
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.5" data-path="../language-basic/自定义函数及内部函数.html">
+            
+                <a href="../language-basic/自定义函数及内部函数.html">
+            
+                    
+                    自定义函数及内部函数
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.6" data-path="../language-basic/正则表达式.html">
+            
+                <a href="../language-basic/正则表达式.html">
+            
+                    
+                    正则表达式
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.7" data-path="../language-basic/文件及目录.html">
+            
+                <a href="../language-basic/文件及目录.html">
+            
+                    
+                    文件及目录
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.8" data-path="../language-basic/面向对象.html">
+            
+                <a href="../language-basic/面向对象.html">
+            
+                    
+                    面向对象
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.9" data-path="../language-basic/网络协议.html">
+            
+                <a href="../language-basic/网络协议.html">
+            
+                    
+                    网络协议
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.10" data-path="../language-basic/会话控制技术.html">
+            
+                <a href="../language-basic/会话控制技术.html">
+            
+                    
+                    会话控制
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.11" data-path="../language-basic/开发环境及配置.html">
+            
+                <a href="../language-basic/开发环境及配置.html">
+            
+                    
+                    开发环境及配置
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="../mysql/">
+            
+                <a href="../mysql/">
+            
+                    
+                    MySQL 基础
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1" data-path="../mysql/MySQL基础.html">
+            
+                <a href="../mysql/MySQL基础.html">
+            
+                    
+                    MySQL 基础
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2" data-path="../mysql/MySQL创建高性能索引.html">
+            
+                <a href="../mysql/MySQL创建高性能索引.html">
+            
+                    
+                    MySQL 创建高性能索引
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3" data-path="../mysql/MySQL的SQL语句编写.html">
+            
+                <a href="../mysql/MySQL的SQL语句编写.html">
+            
+                    
+                    MySQL 的SQL语句编写
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.4" data-path="../mysql/MySQL的查询优化.html">
+            
+                <a href="../mysql/MySQL的查询优化.html">
+            
+                    
+                    MySQL 的查询优化
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.5" data-path="../mysql/MySQL 的高可扩展和高可用.md">
+            
+                <span>
+            
+                    
+                    MySQL的高可扩展和高可用
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.6" data-path="../mysql/MySQL的安全性.html">
+            
+                <a href="../mysql/MySQL的安全性.html">
+            
+                    
+                    MySQL 的安全性
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="../high-concurrenc/README.md">
+            
+                <span>
+            
+                    
+                    高并发
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter active" data-level="1.4.1" data-path="高并发和大流量解决方案.html">
+            
+                <a href="高并发和大流量解决方案.html">
+            
+                    
+                    高并发和大流量解决方案
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.2" data-path="Web资源防盗链.md">
+            
+                <span>
+            
+                    
+                    Web防盗链
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.3" data-path="减少HTTP请求次数.html">
+            
+                <a href="减少HTTP请求次数.html">
+            
+                    
+                    减少HTTP请求次数
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.4" data-path="浏览器缓存和数据压缩.html">
+            
+                <a href="浏览器缓存和数据压缩.html">
+            
+                    
+                    浏览器缓存和数据压缩
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.5" data-path="CDN加速.html">
+            
+                <a href="CDN加速.html">
+            
+                    
+                    CDN加速
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            本书使用 GitBook 发布
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >高并发和大流量解决方案</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h3 id="&#x9AD8;&#x5E76;&#x53D1;&#x548C;&#x5927;&#x6D41;&#x91CF;&#x89E3;&#x51B3;&#x65B9;&#x6848;">&#x9AD8;&#x5E76;&#x53D1;&#x548C;&#x5927;&#x6D41;&#x91CF;&#x89E3;&#x51B3;&#x65B9;&#x6848;</h3>
+<h4 id="&#x9AD8;&#x5E76;&#x53D1;&#x6846;&#x67B6;&#x76F8;&#x5173;&#x6982;&#x5FF5;">&#x9AD8;&#x5E76;&#x53D1;&#x6846;&#x67B6;&#x76F8;&#x5173;&#x6982;&#x5FF5;</h4>
+<p>&#x9AD8;&#x5E76;&#x53D1;&#xFF1A;&#x5728;&#x4E92;&#x8054;&#x7F51;&#x65F6;&#x4EE3;&#xFF0C;&#x6240;&#x8BB2;&#x7684;&#x5E76;&#x53D1;&#x3001;&#x9AD8;&#x5E76;&#x53D1;&#xFF0C;&#x901A;&#x5E38;&#x662F;&#x6307;&#x5E76;&#x53D1;&#x8BBF;&#x95EE;&#x3002;&#x4E5F;&#x5C31;&#x662F;&#x5728;&#x67D0;&#x4E2A;&#x65F6;&#x95F4;&#x70B9;&#xFF0C;&#x6709;&#x591A;&#x5C11;&#x4E2A;&#x8BBF;&#x95EE;&#x540C;&#x65F6;&#x5230;&#x6765;&#x3002;</p>
+<p>&#x6211;&#x4EEC;&#x8BF4;&#x7684;&#x9AD8;&#x5E76;&#x53D1;&#x662F;&#x4EC0;&#x4E48;&#xFF1A;</p>
+<p>&#x901A;&#x5E38;&#x5982;&#x679C;&#x4E00;&#x4E2A;&#x7CFB;&#x7EDF;&#x7684;&#x65E5; <code>PV</code> &#x5728;&#x5343;&#x738B;&#x4EE5;&#x4E0A;&#xFF0C;&#x6709;&#x53EF;&#x80FD;&#x662F;&#x4E00;&#x4E2A;&#x9AD8;&#x5E76;&#x53D1;&#x7684;&#x7CFB;&#x7EDF;</p>
+<p>&#x9AD8;&#x5E76;&#x53D1;&#xFF0C;&#x6211;&#x4EEC;&#x5E94;&#x8BE5;&#x5173;&#x5FC3;&#x4EC0;&#x4E48;&#xFF1F;</p>
+<p><code>QPS</code> &#xFF1A;&#x6BCF;&#x79D2;&#x949F;&#x8BF7;&#x6C42;&#x6216;&#x8005;&#x67E5;&#x8BE2;&#x7684;&#x6570;&#x91CF;&#xFF0C;&#x5728;&#x4E92;&#x8054;&#x7F51;&#x9886;&#x57DF;&#xFF0C;&#x6307;&#x6BCF;&#x79D2;&#x54CD;&#x5E94;&#x8BF7;&#x6C42;&#x6570;(&#x6307;HTTP&#x8BF7;&#x6C42;)&#xFF1B;</p>
+<p><code>&#x541E;&#x5410;&#x91CF;</code> &#xFF1A;&#x5355;&#x4F4D;&#x65F6;&#x95F4;&#x5185;&#x5904;&#x7406;&#x7684;&#x8BF7;&#x6C42;&#x6570;&#x91CF;(&#x901A;&#x5E38;&#x7531; <code>QPS</code> &#x4E0E;&#x5E76;&#x53D1;&#x6570;&#x51B3;&#x5B9A;)</p>
+<p><code>&#x54CD;&#x5E94;&#x65F6;&#x95F4;</code> &#xFF1A;&#x4ECE;&#x8BF7;&#x6C42;&#x53D1;&#x9001;&#x5230;&#x54CD;&#x5E94;&#x65F6;&#x95F4;&#x82B1;&#x8D39;&#x7684;&#x65F6;&#x95F4;&#x3002;</p>
+<p><code>PV</code> &#xFF1A;&#x7EFC;&#x5408;&#x6D4F;&#x89C8;&#x91CF;(Page View)&#xFF0C;&#x5373;&#x9875;&#x9762;&#x6D4F;&#x89C8;&#x91CF;&#x6216;&#x8005;&#x70B9;&#x51FB;&#x91CF;&#xFF0C;&#x4E00;&#x4E2A;&#x8BBF;&#x5BA2;&#x5728;24&#x5C0F;&#x65F6;&#x5185;&#x8BBF;&#x95EE;&#x7684;&#x9875;&#x9762;&#x6570;&#x91CF;</p>
+<p>&#x540C;&#x4E00;&#x4E2A;&#x4EBA;&#x6D4F;&#x89C8;&#x4F60;&#x7684;&#x7F51;&#x7AD9;&#x540C;&#x4E00;&#x4E2A;&#x9875;&#x9762;&#xFF0C;&#x53EA;&#x8BB0;&#x4F5C;&#x4E00;&#x6B21; <code>PV</code> </p>
+<p><code>UV</code> &#xFF1A;&#x72EC;&#x7ACB;&#x8BBF;&#x5BA2;(UniQue Visitor)&#xFF0C;&#x5373;&#x4E00;&#x5B9A;&#x65F6;&#x95F4;&#x8303;&#x56F4;&#x5185;&#x76F8;&#x540C;&#x8BBF;&#x5BA2;&#x591A;&#x6B21;&#x8BBF;&#x95EE;&#x7F51;&#x7AD9;&#xFF0C;&#x53EA;&#x8BA1;&#x7B97;&#x4E3A;1&#x4E2A;&#x72EC;&#x7ACB;&#x8BBF;&#x5BA2;</p>
+<p><code>&#x5E26;&#x5BBD;</code> &#xFF1A;&#x8BA1;&#x7B97;&#x5E26;&#x5BBD;&#x5927;&#x5C0F;&#x9700;&#x5173;&#x6CE8;&#x4E24;&#x4E2A;&#x6307;&#x6807;&#xFF0C;&#x5CF0;&#x503C;&#x6D41;&#x91CF;&#x548C;&#x9875;&#x9762;&#x7684;&#x5E73;&#x5747;&#x5927;&#x5C0F;</p>
+<p>&#x65E5;&#x7F51;&#x7AD9;&#x5E26;&#x5BBD; = PV / &#x7EDF;&#x8BA1;&#x65F6;&#x95F4;(&#x6362;&#x7B97;&#x5230;&#x79D2;) <em> &#x5E73;&#x5747;&#x9875;&#x9762;&#x5927;&#x5C0F;(&#x5355;&#x4F4D; KB) </em> 8</p>
+<p>&#x5CF0;&#x503C;&#x4E00;&#x822C;&#x662F;&#x5E73;&#x5747;&#x503C;&#x7684;&#x500D;&#x6570;&#xFF0C;&#x6839;&#x636E;&#x5B9E;&#x9645;&#x60C5;&#x51B5;&#x6765;&#x5B9A;</p>
+<p>QPS &#x4E0D;&#x7B49;&#x4E8E; &#x5E76;&#x53D1;&#x8FDE;&#x63A5;&#x6570;</p>
+<p>QPS &#x662F;&#x6BCF;&#x79D2; HTTP &#x8BF7;&#x6C42;&#x6570;&#x91CF;&#xFF0C;&#x5E76;&#x53D1;&#x8FDE;&#x63A5;&#x6570;&#x662F;&#x7CFB;&#x7EDF;&#x540C;&#x65F6;&#x5904;&#x7406;&#x7684;&#x8BF7;&#x6C42;&#x6570;&#x91CF;</p>
+<p>(&#x603B; PV &#x6570; <em> 80%) / (6&#x5C0F;&#x65F6;&#x79D2;&#x6570; </em> 20%) = &#x5CF0;&#x503C;&#x6BCF;&#x79D2;&#x8BF7;&#x6C42;&#x6570;(QPS)</p>
+<p>80% &#x7684;&#x8BBF;&#x95EE;&#x91CF;&#x96C6;&#x4E2D;&#x5728; 20% &#x7684;&#x65F6;&#x95F4;</p>
+<h4 id="&#x538B;&#x529B;&#x6D4B;&#x8BD5;">&#x538B;&#x529B;&#x6D4B;&#x8BD5;</h4>
+<p>&#x6D4B;&#x8BD5;&#x80FD;&#x627F;&#x53D7;&#x7684;&#x6700;&#x5927;&#x5E76;&#x53D1;</p>
+<p>&#x6D4B;&#x8BD5;&#x6700;&#x5927;&#x627F;&#x53D7;&#x7684;QPS&#x503C;</p>
+<p>&#x5E38;&#x7528;&#x6027;&#x80FD;&#x6D4B;&#x8BD5;&#x5DE5;&#x5177;</p>
+<p>ab&#x3001;wrk&#x3001;http_load&#x3001;Web Bench&#x3001;Siege&#x3001;Apache JMeter</p>
+<p><code>ab</code> &#xFF1A;&#x5168;&#x79F0; apache benchmark &#x662F; Apache &#x5B98;&#x65B9;&#x63A8;&#x51FA;&#x7684;&#x5DE5;&#x5177;</p>
+<p>&#x521B;&#x5EFA;&#x591A;&#x4E2A;&#x5E76;&#x53D1;&#x8BBF;&#x95EE;&#x8FDB;&#x7A0B;&#xFF0C;&#x6A21;&#x62DF;&#x591A;&#x4E2A;&#x8BBF;&#x95EE;&#x8005;&#x540C;&#x65F6;&#x5BF9;&#x67D0;&#x4E00;URL&#x5730;&#x5740;&#x8FDB;&#x884C;&#x8BBF;&#x95EE;&#x3002;&#x4ED6;&#x7684;&#x6D4B;&#x8BD5;&#x76EE;&#x7684;&#x662F;&#x57FA;&#x4E8E; URL &#x7684;&#xFF0C;&#x56E0;&#x6B64;&#xFF0C;&#x5B83;&#x65E2;&#x53EF;&#x4EE5;&#x7528;&#x6765;&#x6D4B;&#x8BD5; Apache &#x7684;&#x8D1F;&#x8F7D;&#x538B;&#x529B;&#xFF0C;&#x4E5F;&#x53EF;&#x4EE5;&#x6D4B;&#x8BD5;nginx &#x3001;lighthttp&#x3001;Tomcat&#x3001;iss&#x7B49;&#x5176;&#x4ED6; Web &#x670D;&#x52A1;&#x5668;&#x7684;&#x538B;&#x529B; </p>
+<p><code>ab</code> &#x7684;&#x4F7F;&#x7528;&#xFF1A;</p>
+<pre><code>ab -c 100 -n 5000 &#x5F85;&#x6D4B;&#x8BD5;&#x7F51;&#x7AD9;
+</code></pre><p>&#x6CE8;&#x610F;&#x4E8B;&#x9879;&#xFF1A;</p>
+<ol>
+<li><p>&#x6D4B;&#x8BD5;&#x673A;&#x5668;&#x4E0E;&#x88AB;&#x6D4B;&#x8BD5;&#x673A;&#x5668;&#x5206;&#x5F00;</p>
+</li>
+<li><p>&#x4E0D;&#x8981;&#x5BF9;&#x7EBF;&#x4E0A;&#x670D;&#x52A1;&#x5668;&#x505A;&#x538B;&#x529B;&#x6D4B;&#x8BD5;</p>
+</li>
+<li>&#x89C2;&#x5BDF;&#x6D4B;&#x8BD5;&#x5DE5;&#x5177; ab &#x6240;&#x5728;&#x673A;&#x5668;&#xFF0C;&#x4EE5;&#x53CA;&#x88AB;&#x6D4B;&#x8BD5;&#x7684;&#x524D;&#x6BB5;&#x673A;&#x7684; CPU&#x3001;&#x5185;&#x5B58;&#x3001;&#x7F51;&#x7EDC;&#x7B49;&#x90FD;&#x4E0D;&#x8D85;&#x8FC7;&#x6700;&#x9AD8;&#x9650;&#x5EA6;&#x7684;75%</li>
+</ol>
+<h4 id="qps-&#x8FBE;&#x5230;&#x6781;&#x9650;">QPS &#x8FBE;&#x5230;&#x6781;&#x9650;</h4>
+<p>&#x968F;&#x7740;QPS&#x7684;&#x589E;&#x957F;&#xFF0C;&#x6BCF;&#x4E2A;&#x9636;&#x6BB5;&#x9700;&#x8981;&#x6839;&#x636E;&#x5B9E;&#x9645;&#x60C5;&#x51B5;&#x6765;&#x8FDB;&#x884C;&#x4F18;&#x5316;&#xFF0C;&#x4F18;&#x5316;&#x7684;&#x65B9;&#x6848;&#x4E1A;&#x4F59;&#x786C;&#x4EF6;&#x6761;&#x4EF6;&#x3001;&#x7F51;&#x7EDC;&#x5E26;&#x5BBD;&#x606F;&#x606F;&#x76F8;&#x5173;</p>
+<ol>
+<li><p>QPS &#x8FBE;&#x5230;50</p>
+<p>&#x53EF;&#x4EE5;&#x79F0;&#x4E4B;&#x4E3A;&#x5C0F;&#x578B;&#x7F51;&#x7AD9;&#xFF0C;&#x4E00;&#x822C;&#x7684;&#x670D;&#x52A1;&#x5668;&#x5C31;&#x53EF;&#x4EE5;&#x5E94;&#x4ED8;</p>
+</li>
+<li><p>QPS &#x8FBE;&#x5230;100</p>
+<p>&#x5047;&#x8BBE;&#x5173;&#x7CFB;&#x578B;&#x6570;&#x636E;&#x5E93;&#x7684;&#x6BCF;&#x79D2;&#x8BF7;&#x6C42;&#x5728;0.01&#x79D2;&#x5B8C;&#x6210;&#xFF0C;&#x5047;&#x8BBE;&#x5355;&#x4E2A;&#x9875;&#x9762;&#x53EA;&#x6709;&#x4E00;&#x4E2A;SQL&#x67E5;&#x8BE2;&#xFF0C;&#x90A3;&#x4E48;100 QPS &#x610F;&#x5473;&#x7740;1&#x79D2;&#x80FD;&#x591F;&#x5B8C;&#x6210; 100&#x6B21;&#x8BF7;&#x6C42;&#xFF0C;&#x4F46;&#x662F;&#x6B64;&#x65F6;&#x6211;&#x4EEC;&#x5E76;&#x4E0D;&#x80FD;&#x4FDD;&#x8BC1;&#x6570;&#x636E;&#x5E93;&#x67E5;&#x8BE2;&#x80FD;&#x591F;&#x5B8C;&#x6210; 100&#x6B21;</p>
+<p>&#x65B9;&#x6848;&#xFF1A;&#x6570;&#x636E;&#x5E93;&#x7F13;&#x5B58;&#x5C42;&#xFF0C;&#x6570;&#x636E;&#x5E93;&#x7684;&#x8D1F;&#x8F7D;&#x5747;&#x8861;</p>
+</li>
+<li><p>QPS &#x8FBE;&#x5230;800</p>
+<p>&#x5047;&#x8BBE;&#x6211;&#x4EEC;&#x4F7F;&#x7528;&#x767E;&#x5146;&#x5E26;&#x5BBD;&#xFF0C;&#x610F;&#x5473;&#x7740;&#x7F51;&#x7AD9;&#x51FA;&#x53E3;&#x7684;&#x5B9E;&#x9645;&#x5E26;&#x5BBD;&#x662F;8M&#x5DE6;&#x53F3;&#xFF0C;&#x5047;&#x8BBE;&#x6BCF;&#x4E2A;&#x9875;&#x9762;&#x53EA;&#x6709;10K&#xFF0C;&#x5728;&#x8FD9;&#x4E2A;&#x5E76;&#x53D1;&#x6761;&#x4EF6;&#x4E0B;&#xFF0C;&#x767E;&#x5146;&#x5E26;&#x5BBD;&#x5DF2;&#x7ECF;&#x5403;&#x5B8C;</p>
+<p>&#x65B9;&#x6848;&#xFF1A;CDN&#x52A0;&#x901F;&#x3001;&#x8D1F;&#x8F7D;&#x5747;&#x8861;</p>
+</li>
+<li><p>QPS &#x8FBE;&#x5230;1000</p>
+<p>&#x5047;&#x8BBE;&#x4F7F;&#x7528; Memcache &#x7F13;&#x5B58;&#x6570;&#x636E;&#x5E93;&#x67E5;&#x8BE2;&#x6570;&#x636E;&#xFF0C;&#x6BCF;&#x4E2A;&#x9875;&#x9762;&#x5BF9; Memcache &#x7684;&#x8BF7;&#x6C42;&#x8FDC;&#x5927;&#x4E8E;&#x76F4;&#x63A5;&#x5BF9; DB &#x7684;&#x8BF7;&#x6C42;</p>
+<p>Memcache &#x7684;&#x60B2;&#x89C2;&#x5E76;&#x53D1;&#x6570;&#x5728; 2w &#x5DE6;&#x53F3;&#xFF0C;&#x4F46;&#x662F;&#x6709;&#x53EF;&#x80FD;&#x5728;&#x4E4B;&#x524D;&#x5185;&#x7F51;&#x5E26;&#x5BBD;&#x5DF2;&#x7ECF;&#x5403;&#x5149;&#xFF0C;&#x8868;&#x73B0;&#x51FA;&#x4E0D;&#x7A33;&#x5B9A;</p>
+</li>
+<li><p>QPS &#x8FBE;&#x5230;2000</p>
+<p>&#x8FD9;&#x4E2A;&#x7EA7;&#x522B;&#x4E0B;&#xFF0C;&#x6587;&#x4EF6;&#x7CFB;&#x7EDF;&#x8BBF;&#x95EE;&#x9501;&#x90FD;&#x6210;&#x4E3A;&#x4E86;&#x707E;&#x96BE;</p>
+<p>&#x65B9;&#x6848;&#xFF1A;&#x505A;&#x4E1A;&#x52A1;&#x5206;&#x7C7B;&#xFF0C;&#x5206;&#x5E03;&#x5F0F;&#x5B58;&#x50A8;</p>
+</li>
+</ol>
+<h4 id="&#x9AD8;&#x5E76;&#x53D1;&#x89E3;&#x51B3;&#x65B9;&#x6848;">&#x9AD8;&#x5E76;&#x53D1;&#x89E3;&#x51B3;&#x65B9;&#x6848;</h4>
+<ol>
+<li><p>&#x6D41;&#x91CF;&#x4F18;&#x5316;</p>
+<p>&#x9632;&#x76D7;&#x94FE;&#x5904;&#x7406;</p>
+</li>
+<li><p>&#x524D;&#x7AEF;&#x4F18;&#x5316;</p>
+<ul>
+<li>&#x51CF;&#x5C11;HTTP&#x8BF7;&#x6C42;</li>
+<li>&#x6DFB;&#x52A0;&#x5F02;&#x6B65;&#x8BF7;&#x6C42;</li>
+<li>&#x542F;&#x7528;&#x6D4F;&#x89C8;&#x5668;&#x7F13;&#x5B58;&#x548C;&#x6587;&#x4EF6;&#x538B;&#x7F29;</li>
+<li>CDN&#x52A0;&#x901F;</li>
+<li>&#x5EFA;&#x7ACB;&#x72EC;&#x7ACB;&#x56FE;&#x7247;&#x670D;&#x52A1;&#x5668;</li>
+</ul>
+</li>
+<li><p>&#x670D;&#x52A1;&#x7AEF;&#x4F18;&#x5316;</p>
+<ul>
+<li>&#x9875;&#x9762;&#x9759;&#x6001;&#x5316;</li>
+<li>&#x5E76;&#x53D1;&#x5904;&#x7406;</li>
+<li>&#x961F;&#x5217;&#x5904;&#x7406;</li>
+</ul>
+</li>
+<li><p>&#x6570;&#x636E;&#x5E93;&#x4F18;&#x5316;</p>
+<ul>
+<li><p>&#x6570;&#x636E;&#x5E93;&#x7F13;&#x5B58;</p>
+</li>
+<li><p>&#x5206;&#x5E93;&#x5206;&#x8868;&#x3001;&#x5206;&#x533A;&#x64CD;&#x4F5C;</p>
+</li>
+<li><p>&#x8BFB;&#x5199;&#x5206;&#x79BB;</p>
+</li>
+<li>&#x8D1F;&#x8F7D;&#x5747;&#x8861;</li>
+</ul>
+</li>
+<li><p>Web &#x670D;&#x52A1;&#x5668;&#x4F18;&#x5316;</p>
+<ul>
+<li>&#x8D1F;&#x8F7D;&#x5747;&#x8861;</li>
+</ul>
+</li>
+</ol>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="../high-concurrenc/README.md" class="navigation navigation-prev " aria-label="Previous page: 高并发">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="Web资源防盗链.md" class="navigation navigation-next " aria-label="Next page: Web防盗链">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"高并发和大流量解决方案","level":"1.4.1","depth":2,"next":{"title":"Web防盗链","level":"1.4.2","depth":2,"path":"high-concurrency/Web资源防盗链.md","ref":"high-concurrency/Web资源防盗链.md","articles":[]},"previous":{"title":"高并发","level":"1.4","depth":1,"path":"high-concurrenc/README.md","ref":"high-concurrenc/README.md","articles":[{"title":"高并发和大流量解决方案","level":"1.4.1","depth":2,"path":"high-concurrency/高并发和大流量解决方案.md","ref":"high-concurrency/高并发和大流量解决方案.md","articles":[]},{"title":"Web防盗链","level":"1.4.2","depth":2,"path":"high-concurrency/Web资源防盗链.md","ref":"high-concurrency/Web资源防盗链.md","articles":[]},{"title":"减少HTTP请求次数","level":"1.4.3","depth":2,"path":"high-concurrency/减少HTTP请求次数.md","ref":"high-concurrency/减少HTTP请求次数.md","articles":[]},{"title":"浏览器缓存和数据压缩","level":"1.4.4","depth":2,"path":"high-concurrency/浏览器缓存和数据压缩.md","ref":"high-concurrency/浏览器缓存和数据压缩.md","articles":[]},{"title":"CDN加速","level":"1.4.5","depth":2,"path":"high-concurrency/CDN加速.md","ref":"high-concurrency/CDN加速.md","articles":[]}]},"dir":"ltr"},"config":{"plugins":["highlight","livereload"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"highlight":{},"livereload":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","author":"Mr.B","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"GitBook","language":"zh-hans","links":{"sidebar":{"Home":"https://wodaixin.github.io"}},"gitbook":"3.2.3","description":"这是一个读书笔记"},"file":{"path":"high-concurrency/高并发和大流量解决方案.md","mtime":"2020-07-14T09:21:05.994Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2020-07-19T13:18:25.513Z"},"basePath":"..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../gitbook/gitbook.js"></script>
+    <script src="../gitbook/theme.js"></script>
+    
+        
+        <script src="../gitbook/gitbook-plugin-livereload/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+
